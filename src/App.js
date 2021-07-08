@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './App.css'
+import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -38,7 +38,10 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <>
+      <h1 style={{textAlign:"center"}}>What's Your Plan Today?</h1>
+      <hr style={{width:"100px"}}/>
+      <div className="to-do-content">
         <div>
           <h3>Add an item...</h3>
           <br />
@@ -61,6 +64,7 @@ class App extends Component {
           </ul>
         </div>
       </div>
+      </>
     );
   }
 }
