@@ -1,3 +1,78 @@
-.to-do-content{
-    text-align: center;
+.to-do-content {
+  text-align: center;
+}
+li {
+  list-style: none;
+  background-color: rgba(247, 239, 233, 0.062);
+  max-width: fit-content;
+  padding: 10px;
+  height: 3vh;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  color: khaki;
+  text-align: left;
+}
+input {
+  border: 0px 0px;
+  outline-style: none;
+  width: 250px;
+  height: 3vh;
+  background-color: rgba(192, 196, 192, 0.089);
+  border-bottom: solid 1px rgba(128, 128, 128, 0.007);
+  color: ivory;
+  font-style: italic;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.delete-btn {
+  position: absolute;
+  margin-right: 100px;
+  background-color: rgba(156, 9, 224, 0.753);
+  box-shadow: rgba(225, 5, 245, 0.219) 0px 20px 25px -5px,
+    rgba(248, 250, 248, 0.144) 0px 10px 10px -5px;
+  border: none;
+  outline-style: none;
+  border-radius: 3px;
+  align-items: flex-end;
+  margin-left: 30px;
+  color: ivory;
+  padding: 5px;
+  width: 30px;
+  height: 3vh;
+  cursor: pointer;
+}
+.add-btn {
+  width: 50px;
+  height: 4vh;
+  margin: 5px;
+  border: none;
+  outline-style: none;
+  font-style: italic;
+  border-radius: 5px;
+  box-shadow: rgba(13, 245, 5, 0.212) 0px 20px 25px -5px,
+    rgba(12, 236, 49, 0.432) 0px 10px 10px -5px;
+  background-color: lawngreen;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: rgba(128, 128, 128, 0.089);
+  outline-color: lawngreen;
+  border: solid 1px lawngreen;
+  color: ivory;
+}
+.delete-btn:hover {
+  background-color: rgba(255, 56, 7, 0.897);
+}
+.to-do-content {
+  background-color: rgb(25, 46, 46);
+  padding: 20px;
+  max-width: fit-content;
+  border-radius: 10px;
+  height: fit-content;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.418) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.137) 0px 10px 10px -5px;
 }

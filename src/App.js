@@ -39,31 +39,39 @@ class App extends Component {
   render() {
     return (
       <>
-      <h1 style={{textAlign:"center"}}>What's Your Plan Today?</h1>
-      <hr style={{width:"100px"}}/>
-      <div className="to-do-content">
-        <div>
-          <h3>Add an item...</h3>
-          <br />
-          <input
-            type="text"
-            placeholder="type item here..."
-            value={this.state.newItem}
-            onChange={(e) => this.updateInput("newItem", e.target.value)}
-          ></input>
-          <button onClick={() => this.addItem()}>Add</button>
-          <ul>
-            {this.state.list.map((item) => {
-              return (
-                <li key={item.id}>
-                  {item.value}
-                  <button onClick={() => this.deleteItem(item.id)}>X</button>
-                </li>
-              );
-            })}
-          </ul>
+        <div className="to-do-content">
+          <div>
+            {" "}
+            <h3 style={{ textAlign: "center", color:"khaki" }}>What's Your Plan Today?</h3>
+            <hr style={{width:"150px"}} />
+            <h3 style={{ color: "khaki" }}>Add an item...</h3>
+            <br />
+            <input
+              type="text"
+              placeholder="type item here..."
+              value={this.state.newItem}
+              onChange={(e) => this.updateInput("newItem", e.target.value)}
+            ></input>
+            <button onClick={() => this.addItem()} className="add-btn">
+              Add
+            </button>
+            <ul>
+              {this.state.list.map((item) => {
+                return (
+                  <li key={item.id}>
+                    {item.value}
+                    <button
+                      onClick={() => this.deleteItem(item.id)}
+                      className="delete-btn"
+                    >
+                      X
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
-      </div>
       </>
     );
   }
